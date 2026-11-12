@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participantes - Seminfo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="participantes">
+    <header>
+        <nav>
+        <a href="index.html">Inicio</a>
+        <a href="admin.html">Admin</a>
+        <a href="#" id="sair">Sair</a>
+    </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h1>Participantes</h1>
+            <p class="">
+                Os registros vem do MysqlS
+                Somente admins podem editar e exibir
+            </p>
+            <div class="table-warp">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Email</th>
+                        <th>Perfil</th>
+                        <th>Curso</th>
+                        <th>Matricula</th>
+                        <th>Evento</th>
+                        <th>Ações</th>
+                    </tr>
+                </table>
+                <tbody id="tabela-participantes"></tbody>
+            </div>
+            <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="perfil">Perfil:</label>
+            <select name="perfil" id="perfil" required>
+                <option value="" hidden>Selecione um perfil</option>
+                <option value="aluno">Aluno Ouvinte</option>
+                <option value="professor">Professor (Apresentador)</option>
+                <option value="externo">Externo (Ouvinte ou Apresentador)</option>
+            </select>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required>
+            <label for="curso">Curso:</label>
+            <select id="curso" required>
+                <option value="" hidden>Selecione um curso</option>
+                <option value="Sistemas de informação">Sistemas de informação</option>
+                <option value="GTI">Gestão de TI</option>
+                <option value="TI">TI</option>
+                <option value="TADS">TADS</option>
+            </select>
+            <label for="instituição">Instituição</label>
+            <input type="text" id="matricula" name="instiutição" required>
+            <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

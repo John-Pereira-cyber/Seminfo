@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Seminfo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="inicio">
+    <header>
+        <b>SEMINFO - SEMANA DE INFORMAÇÃO</b>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="participantes.html">Participantes</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h1>Inscrição - Seminfo</h1>
+            <p>
+                Bem-vindo á Semana de Informática!
+                Confira seus dadso e escolha a atividade da qual
+                deseja participar.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Dados do Participante</h2>
+            <h3>Olá!<span id="nome-usuario"></span></h3>
+            <p id="perfil-usuario" class="muted"></p>
+            <div id="dados-participantes">
+
+            </div>
+        </section>
+        <section class="card">
+            <h2>Inscrições nas Atividades</h2>
+            <div id="inscricao-atual"></div>
+            <form id="form-inscricao" class="hidden">
+                <label>
+                    Escolha o Evento
+                    <select name="evento_id" id="evento-select" required></select>
+                </label>
+                <label>
+                    Modalidade
+                    <select name="modalidade"
+                    id="modalidade-select" required></select>
+                </label>
+                <button type="submit">Confirmar Inscrição</button>
+            </form>
+            <p id="msg" class="msg"></p>
+        </section>
+        <section class="card">
+            <h2>Participantes Inscritos</h2>
+            <div class="table-warp">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Perfil</th>
+                        <th>Curso</th>
+                        <th>Evento</th>
+                        <th>Modalidade</tth>
+                        <th class="admin-only hidden">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-inscricoes"></tbody>
+            </div>
+        </section>
+    </main>
+    <script src="js/inscricao.js"></script>
+</body>
+</html>
