@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #e6e6e6;
+    margin: 0;
+}
+main{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+h1{
+    margin-top: 6px;
+    color: #1b2a49;
+}
+section{
+    background-color: #f4f4f4;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px #6a6a6a;
+}
+label{
+    display: grid;
+    margin: 12px 0 5px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+fieldset{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button{
+    background-color: #1b2a49;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #30466e;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+button.danger{
+    background-color: #b22331;
+}
+button.light{
+    background-color: #c6bebe;
+    color: #17315c;
+    border: 1px solid #ccc;
+}
+button :disabled{
+    opacity: 0.5;
+}
+li{
+    
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 10px;
+}
+th{
+    background-color: #1b2a49;
+    color: white;
+}
+tbody tr:nth-child(even){
+    background-color: #b9b9b9;
+}
+
+
+header{
+    background-color: #172b53;
+    color: white;
+    padding: 16px 6%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 16px;
+    flex-wrap: warp;
+}
+
+.hidden{
+    display: none !important;
+}
+
+nav{
+    display: flex;
+    gap: 16px;
+    text-align: center;
+}
+
+.card{
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0001;
+    margin-bottom: 20px;
+}
+
+.narrow{
+    max-width: 540px;
+    margin: 35 auto;
+}
+
+a{
+    color: #ffffff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
